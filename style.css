@@ -335,19 +335,18 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  flex-wrap: wrap; /* Allows wrapping if there are many items */
+  align-items: center; /* Vertically centers items */
+  justify-content: flex-start; /* Aligns items to the start horizontally */
+  gap: 1rem; /* Space between articles */
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  align-items: center; /* Vertically aligns the content inside */
+  gap: 1rem; /* Space between icon and text */
 }
+
 
 article .icon {
   cursor: default;
